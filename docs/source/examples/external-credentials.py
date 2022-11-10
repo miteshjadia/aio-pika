@@ -10,6 +10,7 @@ async def main() -> None:
         host="127.0.0.1",
         login="",
         ssl=True,
+        auth='external', /* Default plain */
         ssl_options=SSLOptions(
             cafile="cacert.pem",
             certfile="cert.pem",
